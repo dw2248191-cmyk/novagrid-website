@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 160">
+  <defs>
+    <linearGradient id="ngBlueCyanH" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10,10) scale(0.7)">
+    <polygon points="170.9,146 100,187 29.1,146 29.1,64 100,23 170.9,64" fill="none" stroke="url(#ngBlueCyanH)" stroke-width="9"/>
+    <g stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" fill="none">
+      <line x1="72" y1="70" x2="72" y2="140"/>
+      <line x1="128" y1="70" x2="128" y2="140"/>
+      <line x1="72" y1="70" x2="128" y2="140"/>
+    </g>
+    <circle cx="128" cy="70" r="10" fill="#00E5FF"/>
+  </g>
+  <line x1="158" y1="28" x2="158" y2="132" stroke="#4B5563" stroke-width="2"/>
+  <text x="180" y="98" font-family="'Poppins','Montserrat','Century Gothic','Segoe UI',Arial,sans-serif" font-weight="700" font-size="54" fill="#FFFFFF">NovaGrid</text>
+  <text x="181" y="124" font-family="'Poppins','Montserrat','Century Gothic','Segoe UI',Arial,sans-serif" font-weight="600" font-size="15" letter-spacing="5" fill="#00E5FF">TECHNOLOGIES</text>
+</svg>

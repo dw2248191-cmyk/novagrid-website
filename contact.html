@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — NovaGrid Technologies</title>
+<meta name="description" content="Get in touch with NovaGrid Technologies about network, data center, fiber, or IT infrastructure work.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="index.html"><img src="assets/logo-horizontal-light.svg" alt="NovaGrid Technologies"></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="section-eyebrow">Contact</div>
+    <h1>Tell us what you're working on</h1>
+    <p>Whether it's a network build, a data center migration, or a fiber install — describe the problem and we'll tell you honestly if we're the right fit.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="item">
+          <div class="label">Email</div>
+          <div class="value">eustacewilson47@yahoo.com</div>
+        </div>
+        <div class="item">
+          <div class="label">Phone</div>
+          <div class="value">914-501-9622</div>
+        </div>
+        <div class="item">
+          <div class="label">Based In</div>
+          <div class="value">Corona, New York, USA</div>
+        </div>
+        <div class="item">
+          <div class="label">Expanding To</div>
+          <div class="value">Freetown, Sierra Leone</div>
+        </div>
+      </div>
+      <div>
+        <form class="contact-form" name="contact" method="POST" data-netlify="false">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <input type="text" name="company" placeholder="Company (optional)">
+          <textarea name="message" placeholder="What are you working on?" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p style="font-size:12.5px; color:var(--gray); margin-top:4px;">
+            This form currently sends via email link — replace with a real form handler
+            (e.g. Formspree, or a serverless function) before go-live. See the
+            WEBSITE_MANAGER agent notes for setup.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="foot-logo">
+        <img src="assets/logo-horizontal-dark.svg" alt="NovaGrid Technologies">
+        <p>U.S.-standard digital infrastructure — New York &amp; Freetown, Sierra Leone.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>eustacewilson47@yahoo.com</p>
+        <p>914-501-9622</p>
+        <p>Corona, New York</p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 NovaGrid Technologies. All rights reserved.</span>
+      <span>New York, USA · Freetown, Sierra Leone</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelector('form.contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  var f = e.target;
+  var subject = encodeURIComponent('NovaGrid inquiry from ' + f.name.value);
+  var body = encodeURIComponent(f.message.value + '\n\nFrom: ' + f.name.value + ' (' + f.email.value + ')' + (f.company.value ? '\nCompany: ' + f.company.value : ''));
+  window.location.href = 'mailto:eustacewilson47@yahoo.com?subject=' + subject + '&body=' + body;
+});
+</script>
+
+</body>
+</html>

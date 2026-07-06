@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="ngTileBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A2540"/>
+      <stop offset="100%" stop-color="#0066FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="200" height="200" rx="44" fill="url(#ngTileBg)"/>
+  <g stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" fill="none">
+    <line x1="72" y1="66" x2="72" y2="136"/>
+    <line x1="128" y1="66" x2="128" y2="136"/>
+    <line x1="72" y1="66" x2="128" y2="136"/>
+  </g>
+  <circle cx="128" cy="66" r="10" fill="#00E5FF"/>
+</svg>

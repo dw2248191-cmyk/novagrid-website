@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="ngNavyBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A2540"/>
+      <stop offset="100%" stop-color="#0066FF"/>
+    </linearGradient>
+  </defs>
+  <polygon points="170.9,146 100,187 29.1,146 29.1,64 100,23 170.9,64" fill="url(#ngNavyBlue)"/>
+  <g stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" fill="none">
+    <line x1="72" y1="70" x2="72" y2="140"/>
+    <line x1="128" y1="70" x2="128" y2="140"/>
+    <line x1="72" y1="70" x2="128" y2="140"/>
+  </g>
+  <circle cx="128" cy="70" r="10" fill="#00E5FF"/>
+</svg>
