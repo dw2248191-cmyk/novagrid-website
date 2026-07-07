@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — NovaGrid Technologies</title>
-<meta name="description" content="Get in touch with NovaGrid Technologies about network, data center, fiber, or IT infrastructure work.">
+<meta name="description" content="Get in touch with NovaGrid Technologies about network, data center field services, fiber, or IT infrastructure work in New York and New Jersey.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,6 +13,7 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a class="logo" href="index.html"><img src="assets/logo-horizontal-light.svg" alt="NovaGrid Technologies"></a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     <nav class="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -49,6 +50,10 @@
           <div class="value">Corona, New York, USA</div>
         </div>
         <div class="item">
+          <div class="label">Service Area</div>
+          <div class="value">New York &amp; New Jersey</div>
+        </div>
+        <div class="item">
           <div class="label">Expanding To</div>
           <div class="value">Freetown, Sierra Leone</div>
         </div>
@@ -60,11 +65,6 @@
           <input type="text" name="company" placeholder="Company (optional)">
           <textarea name="message" placeholder="What are you working on?" required></textarea>
           <button type="submit" class="btn btn-primary">Send Message</button>
-          <p style="font-size:12.5px; color:var(--gray); margin-top:4px;">
-            This form currently sends via email link — replace with a real form handler
-            (e.g. Formspree, or a serverless function) before go-live. See the
-            WEBSITE_MANAGER agent notes for setup.
-          </p>
         </form>
       </div>
     </div>
@@ -76,7 +76,7 @@
     <div class="footer-grid">
       <div class="foot-logo">
         <img src="assets/logo-horizontal-dark.svg" alt="NovaGrid Technologies">
-        <p>U.S.-standard digital infrastructure — New York &amp; Freetown, Sierra Leone.</p>
+        <p>U.S.-standard digital infrastructure — New York, New Jersey &amp; Freetown, Sierra Leone.</p>
       </div>
       <div>
         <h4>Site</h4>
@@ -94,7 +94,7 @@
     </div>
     <div class="legal">
       <span>© 2026 NovaGrid Technologies. All rights reserved.</span>
-      <span>New York, USA · Freetown, Sierra Leone</span>
+      <span>New York &amp; New Jersey, USA · Freetown, Sierra Leone</span>
     </div>
   </div>
 </footer>
@@ -108,6 +108,7 @@ document.querySelector('form.contact-form').addEventListener('submit', function(
   window.location.href = 'mailto:eustacewilson47@yahoo.com?subject=' + subject + '&body=' + body;
 });
 </script>
+<script src="assets/site.js"></script>
 
 </body>
 </html>

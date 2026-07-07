@@ -47,6 +47,7 @@ header.site-header {
   padding: 14px 24px;
   max-width: 1120px;
   margin: 0 auto;
+  position: relative;
 }
 
 .nav-wrap .logo img { height: 36px; }
@@ -81,9 +82,11 @@ nav.main-nav a:hover { color: var(--blue); }
   display: none;
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 26px;
+  line-height: 1;
   color: var(--navy);
   cursor: pointer;
+  padding: 4px 6px;
 }
 
 /* Hero */
@@ -238,6 +241,20 @@ h2.section-title {
   vertical-align: middle;
 }
 
+.badge-partner {
+  display: inline-block;
+  background: #E6F1FB;
+  color: #0C447C;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 20px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
 /* Certs list */
 .cert-list { list-style: none; margin: 0; padding: 0; }
 .cert-list li {
@@ -335,4 +352,23 @@ footer.site-footer .legal {
   nav.main-nav { display: none; }
   .menu-toggle { display: block; }
   .hero h1 { font-size: 32px; }
+
+  nav.main-nav.open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid #EEF1F5;
+    box-shadow: 0 12px 20px rgba(10, 37, 64, 0.08);
+  }
+  nav.main-nav.open ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 24px 16px;
+  }
+  nav.main-nav.open ul li { width: 100%; }
+  nav.main-nav.open ul li a { display: block; padding: 12px 0; border-bottom: 1px solid #F2F4F8; }
+  nav.main-nav.open .nav-cta { display: inline-block; margin-top: 8px; }
 }
